@@ -17,12 +17,16 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: |
+            package-lock.json
+            client/package-lock.json
 
       - name: Install dependencies (root)
-        run: npm install
+        run: npm ci --prefer-offline --no-audit
 
       - name: Install dependencies (client)
-        run: cd client && npm install
+        run: cd client && npm ci --prefer-offline --no-audit
 
       - name: Build client
         run: cd client && npm run build
