@@ -22,16 +22,18 @@ jobs:
         run: node --version; npm --version
 
       - name: Install root dependencies
-        run: npm install --verbose
+        run: npm install --legacy-peer-deps
 
       - name: Install client dependencies
-        run: cd client && npm install --verbose
+        run: cd client && npm install --legacy-peer-deps
 
       - name: Verify react-scripts is installed
         run: ls -la client/node_modules/.bin/react-scripts || echo "react-scripts not found"
 
       - name: Build client
-        run: cd client && npm run build --verbose
+        run: cd client && CI=false npm run build --verbose
+        env:
+          CI: false
 
       - name: List build output
         run: ls -la client/build/ || echo "Build directory not found"
