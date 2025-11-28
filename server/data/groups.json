@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Anxiety Support Group",
+    "description": "A safe space for students dealing with anxiety to share experiences and support each other.",
+    "members": [
+      1
+    ],
+    "createdAt": "2025-11-04T18:47:02.338Z"
+  },
+  {
+    "id": 2,
+    "name": "Stress Management Circle",
+    "description": "Learn and share stress management techniques with peers.",
+    "members": [],
+    "createdAt": "2025-11-04T18:47:02.338Z"
+  }
+]

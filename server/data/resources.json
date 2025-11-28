@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Understanding Stress and Anxiety",
+    "description": "Learn about common stress triggers and effective coping strategies.",
+    "category": "Self-Help",
+    "content": "Stress is a natural response to challenges. Understanding your triggers and developing healthy coping mechanisms is key to managing anxiety.",
+    "type": "Article",
+    "createdAt": "2025-11-04T18:47:02.336Z"
+  },
+  {
+    "id": 2,
+    "title": "Mindfulness Meditation Guide",
+    "description": "A beginner's guide to mindfulness and meditation practices.",
+    "category": "Wellness",
+    "content": "Mindfulness meditation can help reduce stress and improve mental clarity. Start with just 5 minutes a day.",
+    "type": "Guide",
+    "createdAt": "2025-11-04T18:47:02.336Z"
+  }
+]
