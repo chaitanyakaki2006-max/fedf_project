@@ -18,14 +18,23 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Check Node and npm versions
+        run: node --version; npm --version
+
       - name: Install root dependencies
-        run: npm install
+        run: npm install --verbose
 
       - name: Install client dependencies
-        run: cd client && npm install
+        run: cd client && npm install --verbose
+
+      - name: Verify react-scripts is installed
+        run: ls -la client/node_modules/.bin/react-scripts || echo "react-scripts not found"
 
       - name: Build client
-        run: cd client && npm run build
+        run: cd client && npm run build --verbose
+
+      - name: List build output
+        run: ls -la client/build/ || echo "Build directory not found"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
