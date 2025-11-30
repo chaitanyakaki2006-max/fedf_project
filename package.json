@@ -4,25 +4,29 @@
   "description": "Mental health support platform for students",
   "main": "server/index.js",
   "scripts": {
-  "dev": "node scripts/start-all.js",
+    "dev": "node scripts/start-all.js",
     "server": "nodemon server/index.js",
     "client": "cd client && npm start",
     "install-all": "npm install && cd client && npm install",
     "build": "cd client && npm run build"
   },
-  "keywords": ["mental-health", "react", "express"],
+  "keywords": [
+    "mental-health",
+    "react",
+    "express"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2",
-    "cors": "^2.8.5",
-    "body-parser": "^1.20.2",
     "bcryptjs": "^2.4.3",
-    "jsonwebtoken": "^9.0.2"
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "react-scripts": "5.0.1"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1",
-    "concurrently": "^8.2.0"
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1"
   }
 }
-

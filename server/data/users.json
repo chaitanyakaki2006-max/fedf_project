@@ -6,5 +6,13 @@
     "name": "yst",
     "role": "student",
     "createdAt": "2025-11-04T18:49:24.470Z"
+  },
+  {
+    "id": 2,
+    "email": "2400030447@kluniversity.in",
+    "password": "$2a$10$MfYd61.auoGDUY11WOdN9eYDI.iMjkznwycw1f68iWX5GcFI3pXdK",
+    "name": "Kaki Chaitanya",
+    "role": "student",
+    "createdAt": "2025-11-29T16:03:34.768Z"
   }
 ]
